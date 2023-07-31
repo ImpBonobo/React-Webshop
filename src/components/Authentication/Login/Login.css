@@ -1,0 +1,18 @@
+.login {
+    height: 50rem;
+}
+
+.login input {
+    margin-top  : 2rem;
+    border      : 1px solid var(--grey-theme);
+    padding-left: 1rem;
+}
+
+.login .form-footer ul li {
+    margin-top: 2rem;
+    min-height: 2rem;
+}
+
+.login .form-footer ul li:last-child {
+    margin-top: 0;
+}

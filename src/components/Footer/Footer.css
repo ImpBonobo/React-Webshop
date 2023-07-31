@@ -1,0 +1,26 @@
+.footer-container {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    color                : var(--grey-theme);
+    justify-items        : center;
+}
+
+.footer-container li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-container li h2{
+    margin-bottom: 1rem;
+}
+
+.footer-container li a:hover {
+    color: var(--second-theme);
+}
+
+@media(max-width: 500px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-template-rows   : 1fr 1fr;
+        justify-items        : left;
+    }
+}

@@ -1,0 +1,9 @@
+.order .order-body .item {
+    border-bottom: 1px solid var(--grey-theme);
+    height       : 10rem;
+}
+
+.order .order-body .item img {
+    width : 8rem;
+    height: 8rem;
+}

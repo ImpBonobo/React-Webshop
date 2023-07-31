@@ -1,0 +1,7 @@
+.order-center {
+    padding        : 4rem 1rem;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: left;
+    gap            : 4rem 0;
+}

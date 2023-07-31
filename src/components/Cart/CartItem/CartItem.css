@@ -1,0 +1,66 @@
+.cart .cart-body .article {
+  height               : 12rem;
+  display              : grid;
+  grid-template-columns: 15% 85%;
+  border-bottom        : 0.1px solid #c5c5c5;
+}
+
+.cart .cart-body .article ul {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.cart .cart-body .article img {
+  width        : 6rem;
+  height       : 6rem;
+  margin-right : 2rem;
+  box-sizing   : border-box;
+  box-shadow   : 7px 7px 10px #cbced1, -7px -7px 10px white;
+  border-radius: 50%;
+}
+
+.cart .cart-body .article .amount-input {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 4rem;
+}
+
+.cart .cart-body .article .remove {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.cart .cart-body .article .remove button,
+.cart .cart-body .article .amount button {
+  height       : 3rem;
+  width        : 3rem;
+  border-radius: 50%;
+}
+
+.cart .cart-body .article .cart-info,
+.cart .cart-body .article .amount {
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+.cart .cart-body .article .amount {
+  align-items    : center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .cart .cart-body .article .amount {
+    display: block;
+  }
+
+  .cart .cart-body .article .amount-input {
+    width: auto;
+  }
+
+  .cart .cart-body .article .price {
+    display: none;
+  }
+}

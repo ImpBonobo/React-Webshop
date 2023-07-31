@@ -1,0 +1,35 @@
+.info-box {
+    height               : 30rem;
+    min-width            : 30rem;
+    margin               : 0 auto;
+    text-align           : center;
+    display              : grid;
+    grid-template-columns: 1fr;
+    grid-template-rows   : 1fr 2fr;
+    border-radius        : 5rem;
+    box-shadow           : inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.info-head,
+.info-body {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.info-head {
+    border-radius   : 5rem 5rem 0 0;
+    background-color: var(--second-theme);
+    grid-row        : 1;
+    font-size       : 3rem;
+    color           : white;
+    z-index         : -1;
+}
+
+.info-body {
+    grid-row   : 2;
+    padding    : 2rem;
+    font-size  : 2rem;
+    font-weight: 600;
+    color      : var(--second-theme);
+}

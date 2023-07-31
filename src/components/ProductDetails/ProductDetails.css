@@ -1,0 +1,101 @@
+.product-detail {
+    padding              : 0 10rem;
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows   : 1fr auto;
+    grid-template-areas  :
+        "image information"
+        "detail detail";
+    row-gap   : 4rem;
+    column-gap: 4rem;
+}
+
+.product-detail-info {
+    padding        : 4rem 1rem;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: left;
+    grid-gap       : 3rem 0;
+    gap            : 3rem 0;
+}
+
+.product-detail .image {
+    text-align      : left;
+    background-color: white;
+    height          : 45rem;
+    grid-area       : image;
+    max-height      : 100%;
+    background-color: var(--background-theme);
+}
+
+.product-detail .image img {
+    height       : 100%;
+    object-fit   : contain;
+    box-shadow   : 14px 14px 20px #cbced1, -14px -14px 20px white;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 996px) {
+    .product-detail .image {
+        width : 30rem;
+        height: 45rem;
+    }
+}
+
+.product-detail .information {
+    grid-area: information;
+}
+
+.product-detail .information .title {
+    display: block;
+}
+
+.product-detail .information .title h3 {
+    margin-top: 0.5rem;
+    color     : var(--second-theme);
+}
+
+.product-detail .attribute {
+    margin-top: 5rem;
+}
+
+.product-detail .attribute table {
+    width          : 70%;
+    border-collapse: collapse;
+}
+
+.product-detail .attribute table td {
+    margin-top: 1rem;
+    padding   : 1rem 0;
+}
+
+.product-detail .attribute button {
+    font-size: 1.5rem;
+    width    : 14rem;
+    height   : 4rem;
+}
+
+.product-detail .detail {
+    grid-area: detail;
+}
+
+.product-detail .detail p {
+    padding: 1rem 0 4rem 0;
+}
+
+@media only screen and (max-width: 650px) {
+    .product-detail {
+        grid-template-columns: 1fr;
+        grid-template-rows   : 0.3fr 0.2fr 0.5fr;
+        grid-template-areas  :
+            "image"
+            "information"
+            "detail";
+    }
+
+
+    .product-detail .image {
+        width : 100%;
+        height: 45rem;
+    }
+}

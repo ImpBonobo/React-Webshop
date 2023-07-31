@@ -1,0 +1,55 @@
+:root {
+    --main-theme      : #2c2f34;
+    --second-theme    : #40e0d0;
+    --grey-theme      : #c5c5c5;
+    --background-theme: #ecf0f3;
+}
+
+*,
+*::before,
+*::after {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing     : border-box;
+    font-size      : 65%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size  : 1.6rem;
+    font-weight: 400;
+    position   : relative;
+    z-index    : 1;
+    min-height : 100vh;
+    background : var(--background-theme);
+    color      : var(--main-theme);
+}
+
+input {
+    background: var(--background-theme);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+a {
+    color          : inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
