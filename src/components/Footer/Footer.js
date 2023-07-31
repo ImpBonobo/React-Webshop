@@ -21,7 +21,7 @@ function Footer() {
                             <p>Telefon 07723 920 0</p>
                         </li>
                         <li>
-                            <p>eric.sartorius@hs-furtwangen.de</p>
+                            <p>com@pseudo.de</p>
                         </li>
                     </ul>
                 </div>
